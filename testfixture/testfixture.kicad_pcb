@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.9-73d0e3b20d~88~ubuntu18.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.5+dfsg1-2build2)
 
   (general
     (thickness 1.6)
@@ -154,6 +154,40 @@
     (via_drill 0.4)
     (uvia_dia 0.3)
     (uvia_drill 0.1)
+  )
+
+  (module rosenberger_sma:32K243-40ML5 (layer F.Cu) (tedit 6022D29E) (tstamp 5FFE6472)
+    (at 131 67.5)
+    (path /5FFE6BEF)
+    (fp_text reference J102 (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Conn_Coaxial (at 0 -0.5) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 2 thru_hole rect (at 0 4.75) (size 4.4 6) (drill 2.2 (offset 0 -0.75)) (layers *.Cu *.Mask)
+      (net 2 GND))
+    (pad 2 thru_hole rect (at 0 -4.75) (size 4.4 6) (drill 2.2 (offset 0 0.75)) (layers *.Cu *.Mask)
+      (net 2 GND))
+    (pad 1 smd rect (at 1.6 0) (size 7.5 1) (layers F.Cu F.Paste F.Mask)
+      (net 3 "Net-(J102-Pad1)"))
+  )
+
+  (module rosenberger_sma:32K243-40ML5 (layer F.Cu) (tedit 6022D29E) (tstamp 5FFE61EA)
+    (at 131 52.5)
+    (path /5FFE12D8)
+    (fp_text reference J101 (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Conn_Coaxial (at 0 -0.5) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 2 thru_hole rect (at 0 4.75) (size 4.4 6) (drill 2.2 (offset 0 -0.75)) (layers *.Cu *.Mask)
+      (net 2 GND))
+    (pad 2 thru_hole rect (at 0 -4.75) (size 4.4 6) (drill 2.2 (offset 0 0.75)) (layers *.Cu *.Mask)
+      (net 2 GND))
+    (pad 1 smd rect (at 1.6 0) (size 7.5 1) (layers F.Cu F.Paste F.Mask)
+      (net 1 "Net-(J101-Pad1)"))
   )
 
   (module Symbol:OSHW-Logo_5.7x6mm_SilkScreen (layer F.Cu) (tedit 0) (tstamp 5FFE9347)
@@ -622,40 +656,6 @@
       (net 2 GND))
   )
 
-  (module rosenberger_sma:32K243-40ML5 (layer F.Cu) (tedit 5FFE13E9) (tstamp 5FFE6472)
-    (at 131 67.5)
-    (path /5FFE6BEF)
-    (fp_text reference J102 (at 0 0.5) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value Conn_Coaxial (at 0 -0.5) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad 2 thru_hole rect (at 0 4.75) (size 4.4 6) (drill 2.2 (offset 0 -0.75)) (layers *.Cu *.Mask)
-      (net 2 GND))
-    (pad 2 thru_hole rect (at 0 -4.75) (size 4.4 6) (drill 2.2 (offset 0 0.75)) (layers *.Cu *.Mask)
-      (net 2 GND))
-    (pad 1 smd rect (at 3.7 0) (size 3 1) (layers F.Cu F.Paste F.Mask)
-      (net 3 "Net-(J102-Pad1)"))
-  )
-
-  (module rosenberger_sma:32K243-40ML5 (layer F.Cu) (tedit 5FFE13E9) (tstamp 5FFE61EA)
-    (at 131 52.5)
-    (path /5FFE12D8)
-    (fp_text reference J101 (at 0 0.5) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value Conn_Coaxial (at 0 -0.5) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad 2 thru_hole rect (at 0 4.75) (size 4.4 6) (drill 2.2 (offset 0 -0.75)) (layers *.Cu *.Mask)
-      (net 2 GND))
-    (pad 2 thru_hole rect (at 0 -4.75) (size 4.4 6) (drill 2.2 (offset 0 0.75)) (layers *.Cu *.Mask)
-      (net 2 GND))
-    (pad 1 smd rect (at 3.7 0) (size 3 1) (layers F.Cu F.Paste F.Mask)
-      (net 1 "Net-(J101-Pad1)"))
-  )
-
   (gr_line (start 146.75 61.75) (end 146.75 61) (layer F.Mask) (width 1.25) (tstamp 3F5))
   (gr_line (start 146.75 61) (end 147.5 60.25) (layer F.Mask) (width 1.25) (tstamp 3F5))
   (gr_line (start 144.535533 63.964466) (end 144.535534 63.964466) (layer F.Mask) (width 2) (tstamp 3F5))
@@ -696,7 +696,7 @@
   (gr_line (start 137.183171 52.558125) (end 137.771193 52.630651) (layer F.Mask) (width 2) (tstamp 3F4))
   (gr_line (start 136.592299 52.51454) (end 137.183171 52.558125) (layer F.Mask) (width 2) (tstamp 3F4))
   (gr_line (start 136 52.5) (end 136.592299 52.51454) (layer F.Mask) (width 2) (tstamp 3F4))
-  (gr_text "USB-C HS\nTestfixture\nCC BY-SA 3.0\n(c) 2021 \nGeorg Ottinger" (at 138 60) (layer B.SilkS)
+  (gr_text "USB-C HS\nTestfixture\nCC BY-SA 3.0\n(c) 2021 \nGeorg Ottinger\nRev.B" (at 138 60) (layer B.SilkS)
     (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
   )
   (gr_text D- (at 136 64) (layer F.SilkS)

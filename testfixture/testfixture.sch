@@ -36,7 +36,7 @@ F 3 "" H 3550 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L wue:632712000011 J103
+L testfixture-rescue:632712000011-wue J103
 U 1 1 5FFE2B8F
 P 6150 2500
 F 0 "J103" H 6150 3459 50  0000 C CNN
