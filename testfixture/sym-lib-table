@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name wue)(type Legacy)(uri /home/f15h/SourceCode/usb2.0_c_testfixture/testfixture/632712000011.lib)(options "")(descr ""))
+  (lib (name testfixture-rescue)(type Legacy)(uri ${KIPRJMOD}/testfixture-rescue.lib)(options "")(descr ""))
 )
